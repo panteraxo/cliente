@@ -28,6 +28,12 @@ input,textarea{
   
   
 }
+.color1{
+  background-color: #16a34a;
+}
+.word{
+  color: #16a34a;
+}
 
 button{
   user-select:none;

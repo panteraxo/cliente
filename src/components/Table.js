@@ -4,8 +4,8 @@ export default function Table({list,total}) {
   return (
     <>
       <table width="100%" className="mb-10">
-        <thead>
-          <tr className="bg-gray-100 p-1 ">
+        <thead >
+          <tr className="color1 text-white p-1 ">
             <td className="font-bold">Description</td>
             <td className="font-bold">Quantity</td>
             <td className="font-bold">Price</td>
@@ -26,8 +26,9 @@ export default function Table({list,total}) {
           </React.Fragment>
         ))}
       </table>
-      <div>
-        <h2 className="flex items-end justify-end text-gray-800 text-4xl font-bold">EUR {total.toLocaleString()}</h2>
+      <div className='flex justify-between'>
+        <h2 className='ml-10'>Gesamtsumme</h2>
+        <h2 className="mr-10  text-gray-800  font-bold">EUR {total.toLocaleString()}</h2>
       </div>
     </>
   )
